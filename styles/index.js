@@ -34,6 +34,8 @@ body {
     top: 0;
     margin: 0;
     padding: 0;
+    padding-left: 20px;
+    padding-right: 20px;
     color: ${config.css.black};
 }
 #__next {
