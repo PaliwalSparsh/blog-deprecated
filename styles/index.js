@@ -20,16 +20,11 @@ export const centeredPageStyles = css`
 
 // used in _app.js
 export const globalStyles = css.global`
-@font-face {
-    font-family: "Abril Fatface";
-    font-display: auto; /* Important for performance */
-    src: url("/static/fonts/Abril-Fatface.woff2") format("woff2");
-    font-style: normal;
-}
 html {
     scroll-behavior: smooth;
 }
 body {
+    font-family: 'Roboto', sans-serif;
     position: relative;
     top: 0;
     margin: 0;
@@ -43,7 +38,7 @@ body {
     min-height: 100vh;
 }
 .footer {
-    background: #fff;
+    background: white;
     height: 80px;
     width: 100%;
     border-top: 2px solid ${config.css.lightGray};
@@ -67,7 +62,7 @@ h5,
 h5 > *,
 h6,
 h6 > * {
-    font-family: "Abril Fatface";
+    font-family: 'EB Garamond', serif;
     letter-spacing: 1px;
 }
 strong {
@@ -111,7 +106,7 @@ a {
 label {
     color: ${config.css.black};
     font-weight: 600;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 18px;
 }
 p,

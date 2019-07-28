@@ -16,8 +16,8 @@ export default class MyDocument extends Document {
                         content="width=device-width, initial-scale=1"
                     />
                     <link rel="icon" href="/static/icons/favicon.ico" />
-
                     <link rel="manifest" href="/static/manifest.json" />
+                    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Roboto&display=swap" rel="stylesheet" />
                     <meta
                         name="theme-color"
                         content={config.css.primaryColor}

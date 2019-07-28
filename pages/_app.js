@@ -1,12 +1,10 @@
 import App, { Container } from "next/app";
 import Head from "next/head";
 import NextSeo from "next-seo";
-import Navigation from "../components/Navigation";
 import { createSEOConfig } from "../utils/seo";
 import getPostData from "../utils/get-post-data";
 import BlogEngine from "../utils/blog-engine";
 import { renderLayout } from "../utils/render-app-layout";
-import Footer from "../components/Footer";
 import { checkForSW } from "../utils/check-for-sw";
 import { FaBars } from "react-icons/fa";
 import { globalStyles } from "../styles";
@@ -50,12 +48,6 @@ export default class MyApp extends App {
         }
     }
 
-    handleToggleNavigation = () => {
-        this.setState({
-            navOpen: !this.state.navOpen
-        });
-    };
-
     render() {
         const { postData } = this.state;
 
@@ -70,27 +62,10 @@ export default class MyApp extends App {
                     </Head>
                     <NextSeo config={seoData} />
 
-                    {/* (2) navigation */}
-                    <Navigation
-                        open={this.state.navOpen}
-                        toggleNavigation={this.handleToggleNavigation}
-                    />
-                    <button
-                        type="button"
-                        role="button"
-                        aria-label="open navigation"
-                        className="icon-button hamburger"
-                        onClick={this.handleToggleNavigation}>
-                        <FaBars size={20} />
-                    </button>
-
                     {/* (3) page body */}
                     <React.Fragment>
                         {renderLayout(this.props, this.state)}
                     </React.Fragment>
-
-                    {/* (4) footer */}
-                    <Footer />
 
                     {/* (5) global and local styles */}
                     <style global jsx>
