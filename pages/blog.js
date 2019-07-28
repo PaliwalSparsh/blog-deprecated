@@ -2,13 +2,13 @@ import React from "react";
 import PostListing from "../components/PostListing";
 
 export const meta = {
-    title: "Programming Posts",
-    tags: ["Next.js", "MDX"],
+    title: "Entries",
+    tags: ["posts", "diary", "blog"],
     layout: "blog-post-list",
-    publishDate: "2011-01-01",
+    publishDate: "2019-07-20",
     modifiedDate: false,
     seoDescription:
-        "All of your blog posts are listed on this page, unless a post has the meta property `exclude: true`."
+        "All my entries are listed here."
 };
 
 export default function Blog(props) {
