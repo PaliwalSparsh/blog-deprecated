@@ -2,8 +2,8 @@ config:
     author: Sparsh Paliwal
     siteName: Sparsh Paliwal
     siteDescription: Discoman is learning to write
-    defaultPageTitle: Add a default page title here
-    blogTitle: Disco's lair
+    defaultPageTitle: This is my personal public diary
+    blogTitle: Disco's personal public diary
     baseUrl: www.sparshpaliwal.com
 
     # For Twitter cards, this logo must be a hosted url, not a relative path.

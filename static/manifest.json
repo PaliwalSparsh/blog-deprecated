@@ -1,7 +1,7 @@
 {
-    "name": "Next.js MDX Static Blog Kit",
-    "short_name": "Blog Kit",
-    "description": "A starter kit for creating a static blog using Next.js and MDX.",
+    "name": "Disco's diary",
+    "short_name": "Diary",
+    "description": "The personal public diary of discoman.",
     "display": "standalone",
     "orientation": "portrait",
     "start_url": "/",

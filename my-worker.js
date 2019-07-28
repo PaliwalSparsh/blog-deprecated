@@ -13,12 +13,7 @@ to enter the full url, e.g., `/blog/animation/using-react-sprint` for each page 
 the directory. 
 */
 
-const precacheFiles = [
-    "/",
-    "/about/",
-    "/search/",
-    "/blog/",
-];
+const precacheFiles = []];
 
 self.addEventListener("install", e => {
     console.log("[ServiceWorker] Installed");
