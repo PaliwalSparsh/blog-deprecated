@@ -2,7 +2,7 @@ import React from "react";
 import HomePageLayout from "../components/layouts/HomePageLayout";
 
 export const meta = {
-  title: "About",
+  title: "Home - Disco's diary",
   tags: ["Next.js", "MDX"],
   layout: "page",
   publishDate: "2011-01-01",
