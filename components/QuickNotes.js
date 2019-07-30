@@ -69,16 +69,15 @@ export default class QuickNotes extends Component {
             bottom: 20px;
             right: 20px;
             transition: 0.2s;
-            opacity: 0.85;
             user-select: none;
             z-index: 10;
           }
           .quickNotes__toggleNotesButton:hover {
-            opacity: 1;
+            background-color: ${config.css.primaryLightColor};
           }
           .quickNotes__toggleNotesButton:active {
+            background-color: ${config.css.primaryLightestColor};
             box-shadow: 0 4px 6px hsla(0, 0%, 0%, 0.2);
-            opacity: 1;
             transform: translate(1px, 1px);
           }
           .quickNotes__overlay {
@@ -132,8 +131,9 @@ export default class QuickNotes extends Component {
           .quickNotes__modal__textarea {
             padding: 10px;
             box-sizing: border-box;
-            color: #1a1a1a;
+            color: ${config.css.black};
             font-size: 18px;
+            font-family: 'Roboto', sans-serif;
             height: 70%;
             width: 100%;
             border: none;
@@ -141,7 +141,7 @@ export default class QuickNotes extends Component {
             outline: none;
             box-shadow: none;
             resize: none;
-            background-color: #fdebe2;
+            background-color: ${config.css.primaryLightestColor};
             border-radius: 7px;
           }
           .quickNotes__modal__copyButton {

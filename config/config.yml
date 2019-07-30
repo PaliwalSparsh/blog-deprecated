@@ -23,7 +23,10 @@ config:
     css:
         primaryColor: "#efb596"
         primaryLightColor: "#fad7c5"
+        primaryLightestColor: "#fdebe2"
         accentColor: "#455A64"
         lightGray: "#eeeeee"
         backgroundColor: "#ffffff"
         black: "#333"
+    
+    gaTrackingId: "UA-144848380-1"
