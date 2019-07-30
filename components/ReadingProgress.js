@@ -19,6 +19,7 @@ export default class ReadingProgress extends Component {
 
     render() {
         const style = {
+            zIndex: 1000,
             backgroundColor: config.css.primaryColor,
             height: "5px",
             position: "fixed",

@@ -22,6 +22,7 @@ config:
 
     css:
         primaryColor: "#efb596"
+        primaryLightColor: "#fad7c5"
         accentColor: "#455A64"
         lightGray: "#eeeeee"
         backgroundColor: "#ffffff"

@@ -2,6 +2,7 @@ import React from "react";
 import NavButton from "../NavButton";
 import blogButtonPng from "../../static/images/blog_button.png";
 import DiscussionLink from "../DiscussionLink";
+import QuickNotes from "../QuickNotes";
 
 export default ({ children }) => {
   const postData = children && children.props.postData;
@@ -10,6 +11,7 @@ export default ({ children }) => {
   const showDiscussionLink = postData.showDiscussionLink === false ? false : true;
   return (
     <div className="blog-layout">
+      <QuickNotes/>
       {children}
       { showDiscussionLink && <DiscussionLink fullUrlPath={postData.fullUrlPath} /> }
       <div className="navigationButtonContainer">
