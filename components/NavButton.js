@@ -10,6 +10,7 @@ export default function NavButton(props) {
       <style jsx>{`
         .navButton {
           width: 200px;
+          transition: 0.3s ease;
         }
         .navButton:hover {
           opacity: 0.8;
