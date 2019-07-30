@@ -1,5 +1,25 @@
 import React, { Component } from "react";
 import { config } from "../config/config.yml";
+import * as gtag from "../utils/gtag";
+
+const gaForQuickNotesButton = () => {
+  gtag.event({
+    action: "quick_notes_button",
+    category: "widgets",
+    label: "click",
+    value: 1
+  });
+};
+
+const gaForQuickNotesCopyButton = () => {
+  gtag.event({
+    action: "quick_notes_copy",
+    category: "widgets",
+    label: "click",
+    value: 1
+  });
+};
+
 
 export default class QuickNotes extends Component {
   state = {
@@ -8,6 +28,7 @@ export default class QuickNotes extends Component {
   };
 
   copyText = () => {
+    gaForQuickNotesCopyButton();
     this.refs.notes.select();
     document.execCommand("copy");
   };
@@ -17,6 +38,7 @@ export default class QuickNotes extends Component {
   };
 
   toggleIsOpen = () => {
+    gaForQuickNotesButton();
     this.setState({ isOpen: !this.state.isOpen });
   };
 

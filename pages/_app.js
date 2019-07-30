@@ -6,8 +6,12 @@ import getPostData from "../utils/get-post-data";
 import BlogEngine from "../utils/blog-engine";
 import { renderLayout } from "../utils/render-app-layout";
 import { checkForSW } from "../utils/check-for-sw";
-import { FaBars } from "react-icons/fa";
 import { globalStyles } from "../styles";
+import Router from 'next/router';
+import * as gtag from '../utils/gtag';
+
+// ga for pageview
+Router.events.on('routeChangeComplete', url => gtag.pageview(url))
 
 export default class MyApp extends App {
     constructor(props) {
@@ -16,6 +20,7 @@ export default class MyApp extends App {
     }
 
     static async getInitialProps({ Component, router, ctx }) {
+        // For page view GA
         let pageProps = {};
 
         if (Component.getInitialProps) {
