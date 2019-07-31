@@ -11,7 +11,11 @@ import Router from 'next/router';
 import * as gtag from '../utils/gtag';
 
 // ga for pageview
-Router.events.on('routeChangeComplete', url => gtag.pageview(url))
+const isProduction = process.env.NODE_ENV === "production";
+
+if (isProduction) {
+    Router.events.on('routeChangeComplete', url => gtag.pageview(url));
+}
 
 export default class MyApp extends App {
     constructor(props) {

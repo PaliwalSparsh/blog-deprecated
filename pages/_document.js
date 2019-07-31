@@ -2,7 +2,6 @@ import Document, { Head, Main, NextScript } from "next/document";
 import { config } from "../config/config.yml";
 
 const GA_TRACKING_ID = config.gaTrackingId;
-
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
