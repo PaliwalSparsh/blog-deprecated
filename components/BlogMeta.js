@@ -12,7 +12,7 @@ export default class BlogMeta extends Component {
   render() {
     const { postData } = this.props.data;
     const { formattedPublishDate, title, unsplashPhotoId, tags } = postData;
-    const imageUrl = `https://source.unsplash.com/${unsplashPhotoId}/1600x900`
+    const imageUrl = `https://source.unsplash.com/${unsplashPhotoId}/1600x900&auto=format`;
     return (
       <React.Fragment>
         {this.renderProgressBar(postData)}
