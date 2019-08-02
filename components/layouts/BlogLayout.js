@@ -6,14 +6,17 @@ import QuickNotes from "../QuickNotes";
 
 export default ({ children }) => {
   const postData = children && children.props.postData;
-  
+
   // by default show discussion link
-  const showDiscussionLink = postData.showDiscussionLink === false ? false : true;
+  const showDiscussionLink =
+    postData.showDiscussionLink === false ? false : true;
   return (
     <div className="blog-layout">
-      <QuickNotes/>
+      <QuickNotes />
       {children}
-      { showDiscussionLink && <DiscussionLink fullUrlPath={postData.fullUrlPath} /> }
+      {showDiscussionLink && (
+        <DiscussionLink fullUrlPath={postData.fullUrlPath} />
+      )}
       <div className="navigationButtonContainer">
         <NavButton
           className="navigationButtonContainer__button"
@@ -25,7 +28,7 @@ export default ({ children }) => {
         .blog-layout {
           margin: auto;
         }
-  
+
         .navigationButtonContainer {
           padding-top: 50px;
           width: 100%;
@@ -36,4 +39,4 @@ export default ({ children }) => {
       `}</style>
     </div>
   );
-} 
+};
