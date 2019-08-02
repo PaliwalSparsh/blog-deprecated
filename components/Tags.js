@@ -5,7 +5,6 @@ function tagMaker(tagList) {
     let alphabetizedTags = tagList.sort();
     return (
         <div className={`tag-container`}>
-            <span>Tags: </span>
             {alphabetizedTags.map(tag => (
                 <Link prefetch key={`${tag}-link`} href={`/search?q=${tag}`}>
                     <a key={tag} className="tag">
