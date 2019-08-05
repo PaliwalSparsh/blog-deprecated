@@ -103,6 +103,9 @@ export default function FlipImg(props) {
           .mainContainer {
             height: 400px;
           }
+          .image {
+            transform: translate(0px, 0px);
+          }        
         }
       `}</style>
     </div>
