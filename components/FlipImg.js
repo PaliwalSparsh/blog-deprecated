@@ -53,7 +53,7 @@ export default function FlipImg(props) {
           border-radius: 10px;
           backface-visibility: hidden;
           overflow: hidden;
-          background: #ffc728;
+          background: ${config.css.primaryLightestColor};
           color: #000;
         }
 
