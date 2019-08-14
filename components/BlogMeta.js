@@ -5,6 +5,7 @@ import FlipImg from "../components/FlipImg";
 import { articleSEO } from "../utils/seo";
 import { formatDisplayDate } from "../utils/formatters";
 import Warning from "../components/Warning";
+import AmbientSoundWidget from './AmbientSoundWidget';
 
 export default class BlogMeta extends Component {
   renderProgressBar = postData => {
@@ -26,6 +27,7 @@ export default class BlogMeta extends Component {
         <TagBlock tags={tags} />
         {articleSEO(postData)}
         {unsplashPhotoId && <div className="imageContainer"><FlipImg imageUrl={imageUrl} message={imageMessage}/></div>}
+        <AmbientSoundWidget/>
         {showWarning && <Warning message={warningMessage}/>}
         <style jsx>{`
             .imageContainer {
