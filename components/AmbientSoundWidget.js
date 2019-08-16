@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { config } from "../config/config.yml";
 
+const AMBIENT_SOUND_URL = "https://raw.githubusercontent.com/PaliwalSparsh/next-blog/feature/branch-for-static-content-hosting/static/audio/rainforest.mp3";
+
 export default class AmbientSoundWidget extends Component {
   state = {
     isPlaying: false
@@ -45,9 +47,9 @@ export default class AmbientSoundWidget extends Component {
             </svg>
           )}
         </div>
-        <audio ref="audioRef" src="../static/audio/rainforest.mp3" loop></audio>
+        <audio ref="audioRef" src={AMBIENT_SOUND_URL} loop></audio>
         <div className="ambientSoundWidgetContainer__directions">
-          Turn on ambient sounds to aid reading.
+          Turn on ambient sounds to wash away distractions.
         </div>
         <style jsx>{`
           .ambientSoundWidgetContainer {
